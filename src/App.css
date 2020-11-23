@@ -1,0 +1,70 @@
+body {
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  font-weight: 300;
+  font-style: Regular;
+  background-color: #f8f9fa !important;
+}
+#navb {
+  background-color: #ffffff !important;
+}
+#sidebar-blok {
+  padding-bottom: 10px !important;
+}
+
+#sidebar-container {
+  min-height:100vh;
+}
+
+.background {
+  background-color: #009688 !important;
+}
+
+#sidebar-container .logo {
+  padding: .875rem 1.25rem;
+}
+
+#sidebar-container .menu {
+  width: 18rem;
+}
+
+#text-le {
+  color:  #009688;
+  font-size:1.2rem;
+  font-weight: bold;
+  font-style: Roboto-regular;
+}
+
+#btn-deconnexion {
+  color:  #ffffff;
+  margin-top: 400px;
+  font-size:18px bold;
+}
+
+#card-mini-etudiants {
+  margin-top: 30px;
+  margin-right: 35px;
+}
+
+#false {
+color: #e62a10 !important;
+}
+
+#true {
+  color: #00c300 !important;
+}
+
+#bg-card {
+  background-color: #009688;
+  margin-top: 30px;
+}
+
+#btn-group {
+  margin-left:85%;
+  width:15%;
+  height:15%;
+}
+
+#btn-add {
+  background-color: #009688;
+}
