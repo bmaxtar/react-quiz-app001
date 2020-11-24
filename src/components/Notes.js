@@ -17,7 +17,7 @@ function Notes() {
               <div className="collapse navbar-collapse" id="navbarSupportedContent-4">
                   <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#"><img src="logo192.png" height="40"/></a>
+                        <a className="nav-link" href="#"><img src="men.png" height="50"/></a>
                     </li>
                       <li className="nav-item active">
                           <a className="nav-link" href="#">Administrateur<i><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
