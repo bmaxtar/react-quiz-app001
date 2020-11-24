@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 function Card() {
   return (
     <div className="Card">
-      <div>
         <div className="container">
           <div className="row">
             <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -22,7 +21,6 @@ function Card() {
                   <button className="btn btn-lg btn-light btn-block text-uppercase" type="submit"> Je  sais pas</button>
                   </form>
                   <div>
-             </div>
              </div>
              </div>
              </div>

@@ -32,23 +32,23 @@ function Add() {
           <div className="d-flex" id="sidebar-blok">
         <div className="background" id="sidebar-container">
           <div className="font-weight-bold">
-            <div className="menu">
-              <a href="#" className="d-block p-3 text-light"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-dash-square mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <div className="menu" id="menu">
+              <a href="#" className="d-block p-3"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-dash-square mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                   <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
                 </svg><Link to="/Administrateur">Dashboard</Link></a>
-                <a href="#"className="d-block p-3 text-light"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-card-checklist mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <a href="#"className="d-block p-3"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-card-checklist mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
                   <path fill-rule="evenodd" d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
                 </svg><Link to="/Notes">Liste des notes</Link></a>
-              <a href="#"className="d-block p-3 text-light"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-card-checklist mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <a href="#"className="d-block p-3"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-card-checklist mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14.5 3h-13a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
                   <path fill-rule="evenodd" d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
                 </svg><Link to="/Questions">Liste des questions</Link></a>
-              <a href="#"className="d-block p-3 text-light"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-plus-circle-fill mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <a href="#"className="d-block p-3"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-plus-circle-fill mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
                 </svg><Link to="/Add">Ajouter</Link></a>
-              <a href="#"className="d-block p-3 text-light"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-person-circle mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <a href="#"className="d-block p-3"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" className="bi bi-person-circle mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
                   <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                   <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
