@@ -14,6 +14,7 @@ body {
 
 #sidebar-container {
   min-height:100vh;
+
 }
 
 .background {
@@ -26,6 +27,7 @@ body {
 
 #sidebar-container .menu {
   width: 18rem;
+
 }
 
 #text-le {
@@ -153,7 +155,6 @@ padding: auto !important;
   display: block;
   width: 100%;
   margin-bottom: 0;
-  /* Override default `<label>` margin */
   line-height: 1.5;
   color: #495057;
   border: 1px solid transparent;

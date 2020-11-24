@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 function Card() {
   return (
@@ -25,7 +26,7 @@ function Card() {
              </div>
              </div>
              </div>
-             </div> 
+             </div>
              </div>
              </div>
              </div>
