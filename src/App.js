@@ -9,12 +9,14 @@ import Login from './users/Login';
 import Register from './users/Register';
 import Theme from './users/Theme';
 import './users/Theme.css';
+import Home from './users/Home';
 
 function App() {
   return (
     <Router>
       <Switch>
       <div className="App">
+        <Route  path="/Home" exact component={Home} />
         <Route  path="/Administrateur" component={Administrateur} />
         <Route  path="/Notes" component={Notes} />
         <Route  path="/Questions" component={Questions} />

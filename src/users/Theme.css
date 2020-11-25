@@ -86,3 +86,49 @@ width: 100%;
   color: #ffffff;
   font-weight: bold;
 }
+
+
+#inputEmail{
+  height: 40px;
+  width: 250px;
+}
+
+#inputPassword{
+  height: 40px;
+  width: 250px;
+  margin-left: -15px;
+}
+#draw {
+  margin-top: -1220px;
+  height: 300px;
+  color:rgb(121, 109, 109)
+
+}
+
+
+#se-connecter{
+ margin-top: -350px;
+ border-radius: 15px;
+ margin-left: 50px;
+ background-color: #c7c7c7;
+ color: white;
+
+
+
+}
+#sinscrire{
+  margin-top: -7px;
+  border-radius:15px ;
+  margin-left: 50px;
+  background-color: #009688;
+  color: white;
+
+}
+
+#livre{
+  width: 850px;
+  height: 850px;
+
+
+
+}
