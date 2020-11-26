@@ -16,13 +16,14 @@ function App() {
     <Router>
       <Switch>
       <div className="App">
-        <Route  path="/Home" exact component={Home} />
+        <Route  path="/" exact component={Home} />
         <Route  path="/Administrateur" component={Administrateur} />
         <Route  path="/Notes" component={Notes} />
         <Route  path="/Questions" component={Questions} />
         <Route  path="/Add" component={Add} />
         <Route  path="/Card" component={Card} />
         <Route  path="/Login" component={Login} />
+        <Route  path="/Register" component={Register} />
         <Route  path="/Theme" component={Theme} />
 
       </div>
