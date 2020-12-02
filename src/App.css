@@ -265,3 +265,13 @@ padding: auto !important;
 #bd {
   color: #009688 !important;
 }
+
+#btn-logout {
+  background-color: #009688;
+  color:#ffffff;
+}
+
+#btn-logout:hover {
+  background-color: #ec9700;
+  color:#ffffff;
+}

@@ -69,7 +69,7 @@ function Questions() {
                   <circle cx="3.5" cy="5.5" r=".5"/>
                   <circle cx="3.5" cy="8" r=".5"/>
                   <circle cx="3.5" cy="10.5" r=".5"/>
-                </svg><Link to="/Card">Liste des questions</Link></a>
+                </svg><Link to="/">Liste des questions</Link></a>
                 <div className="card rounded-0">
                 <div className="card-body">
                   <table className="table table-borderless">

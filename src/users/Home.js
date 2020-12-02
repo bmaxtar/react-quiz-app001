@@ -20,7 +20,7 @@ function Home() {
                     <div class="col-md-9 col-lg-8 mx-auto">
                       <form>
                       <div className="images">
-                        <img src="home.jpeg" id="draw"></img>
+                        <img src="home2.svg" id="draw"></img>
                       </div>
                         <div class="form-label-group">
                         <div><button class="btn btn-lg btn- btn-block btn-login text-uppercase font-weight mb-2" id="se-connecter" type="submit"><Link to="/Login">SE CONNECTER</Link></button>

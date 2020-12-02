@@ -1,16 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavDropdown } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import firebase from 'firebase';
+import fire from '../fire';
+
+function logOutUser() {
+  firebase.auth().signOut().then(() =>{
+    localStorage.removeItem('user')
+    window.location = "/Login"
+  });
+}
 
 
-function Theme() {
+class Theme extends Component {
 
+    constructor(props){
+    super(props);
+    this.state = {
+      user:null,
+    }
+    this.authListener = this.authListener.bind(this);
+  }
+
+  componentDidMount() {
+    this.authListener();
+  }
+
+  authListener(){
+    fire.auth().onAuthStateChanged((user) => {
+      if(user) {
+        this.setState({ user: null});
+      }
+    })
+  }
+
+render () {
   return (
     <div className="Theme">
       <div className="navbar-header navbar container-fluid ">
       <nav className="navbar" id="navbar-theme">
-        <a className="navbar-brand" href="#"></a>
+        <a className="navbar-brand font-weight-bold text-white" href="#">Quiz-App</a>
+        <button className="btn my-2 my-sm-0" type="logout" name="logout" id="btn-logout" onClick={logOutUser}>Deconnexion</button>
       </nav>
     </div>
       <div className="container col-lg-10" id="search-group">
@@ -52,6 +83,7 @@ function Theme() {
 
     </div>
   );
+ }
 }
 
 export default Theme;
