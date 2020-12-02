@@ -33,6 +33,11 @@ class Register extends Component {
 
   async handleSubmit(event) {
     event.preventDefault();
+    if(this.state.password !== this.state.passwordConfirm){
+
+      console.log('passwordConfirm false')
+
+    }
     this.setState({ error: '' });
     try {
       await signup(this.state.name, this.state.email, this.state.password, this.state.passwordConfirm);
@@ -53,7 +58,7 @@ render () {
               <div className="heading mb-4">
                 <h1>S'inscription</h1>
               </div>
-              <form className="form" onSubmit={this.handleSubmit}>
+              <form className="form" autoComplete="off" onSubmit={this.handleSubmit}>
                 <div className="form-input" id="input-form">
                   <input type="text" placeholder="Nom complet:" name="name" onChange={this.handleChange} value={this.state.name}/>
                 </div>
@@ -65,6 +70,10 @@ render () {
                 </div>
                 <div className="form-input" id="input-form">
                   <input type="password" placeholder="Confirmer votre mot de passe:" name="passwordConfirm" onChange={this.handleChange} value={this.state.passwordConfirm}/>
+                </div>
+                <div className="text-center mb-4">
+                  <a href="#" className="text-white font-weight-bold mr-2">Vous avez un compte ?</a>
+                  <a href="#" className="text-white font-weight-bold" id="bd"><Link to="/Login">Connetez-vous !</Link></a>
                 </div>
                 <button type="btn" className="btn btn-default text-center font-weight-bold" id="valid-btn">Valider</button>
               </form>

@@ -12,16 +12,14 @@ function logOutUser() {
   });
 }
 
-
 class Theme extends Component {
 
     constructor(props){
-    super(props);
-    this.state = {
-      user:null,
+      super(props);
+      this.state = {
+        user:null,
+      }
     }
-    this.authListener = this.authListener.bind(this);
-  }
 
   componentDidMount() {
     this.authListener();
@@ -41,7 +39,7 @@ render () {
       <div className="navbar-header navbar container-fluid ">
       <nav className="navbar" id="navbar-theme">
         <a className="navbar-brand font-weight-bold text-white" href="#">Quiz-App</a>
-        <button className="btn my-2 my-sm-0" type="logout" name="logout" id="btn-logout" onClick={logOutUser}>Deconnexion</button>
+        <button className="btn my-2 my-sm-0" type="logout" name="logout" id="btn-logout" onClick={()=>{logOutUser()}}>Deconnexion</button>
       </nav>
     </div>
       <div className="container col-lg-10" id="search-group">

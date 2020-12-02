@@ -7,7 +7,12 @@ import fire from '../fire';
 
 function signin(email, password){
   firebase.auth().signInWithEmailAndPassword(email, password).then(user => console.log('Connexion valide'))
-  .catch(error => console.log('Connexion echec'));
+  .catch(error => console.log('Connexion echec'))
+  firebase.auth().onAuthStateChanged(user => {
+    if(user) {
+    window.location = "/Theme";
+  }
+});
 }
 
 class Login extends Component {
