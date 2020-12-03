@@ -7,13 +7,11 @@ import fire from '../fire';
 
 function signin(email, password){
   firebase.auth().signInWithEmailAndPassword(email, password).then(user => console.log('Connexion valide'))
-  .catch(error => console.log('Connexion echec'))
-  firebase.auth().onAuthStateChanged(user => {
-    if(user) {
-    window.location = "/Theme";
+  .catch(error => console.log('Connexion echec'));
+  
   }
-});
-}
+
+
 
 class Login extends Component {
 
@@ -39,6 +37,7 @@ class Login extends Component {
       this.setState({ error: '' });
       try {
         await signin(this.state.email, this.state.password);
+        this.history.push("/Theme");
       } catch (error) {
         this.setState({ error: error.message });
       }
@@ -46,6 +45,7 @@ class Login extends Component {
 
 
 render() {
+
   return (
     <div className="Login">
       <div className="container-fluid ">

@@ -8,6 +8,7 @@ import fire from '../fire';
 function signup(name, email, password, passwordConfirm){
   firebase.auth().createUserWithEmailAndPassword(email, password).then(user => console.log('Inscription valide'))
   .catch(error => console.log(error));
+
 }
 
 class Register extends Component {
@@ -25,27 +26,27 @@ class Register extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value
-    });
-  }
-
   async handleSubmit(event) {
     event.preventDefault();
-    if(this.state.password !== this.state.passwordConfirm){
-
-      console.log('passwordConfirm false')
-
+    const { name, email, password, passwordConfirm } = this.state
+    if (password !== passwordConfirm) {
+      alert("La confirmation de mot de passe ne correspond pas !")
+      return
     }
     this.setState({ error: '' });
     try {
       await signup(this.state.name, this.state.email, this.state.password, this.state.passwordConfirm);
+      this.history.push("/Theme");
     } catch (error) {
       this.setState({ error: error.message });
     }
   }
 
+  handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  }
 
 render () {
   return (

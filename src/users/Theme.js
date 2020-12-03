@@ -23,6 +23,11 @@ class Theme extends Component {
 
   componentDidMount() {
     this.authListener();
+      const user = firebase.auth().currentUser;
+      if (!user || !user.uid) {
+        this.props.history.replace("/Login")
+      }
+    
   }
 
   authListener(){
